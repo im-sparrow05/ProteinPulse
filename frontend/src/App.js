@@ -31,15 +31,15 @@ function App() {
             <h4>Random Protein Generator</h4>
             <form className="form" onSubmit={handleSubmit}>
                 <div className="form-group">
-                    <label>Number of Lines:</label>
+                    <label>Length of protein sequences:</label>
                     <input type="number" value={numLines} onChange={(e) => setNumLines(e.target.value)} required />
                 </div>
                 <div className="form-group">
-                    <label>Exclude Amino Acids:</label>
+                    <label>Exclude Amino Acids (single-letter-code):</label>
                     <input type="text" value={excludeAa} onChange={(e) => setExcludeAa(e.target.value)} required />
                 </div>
                 <div className="form-group">
-                    <label>Number of Models:</label>
+                    <label>Number of Proteins:</label>
                     <input type="number" value={numModels} onChange={(e) => setNumModels(e.target.value)} required />
                 </div>
                 <button type="submit">Generate Protein Data</button>
