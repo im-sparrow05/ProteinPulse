@@ -105,7 +105,7 @@ Promise.all(execPromises)
                 console.error(`Error deleting file ${file}: ${err.message}`);
             }
         });
-    }, 1000); // Adjust the delay time as needed
+    }, 5000); // Adjust the delay time as needed
 })
 .catch((error) => {
     // Handle any errors that occurred during exec commands
